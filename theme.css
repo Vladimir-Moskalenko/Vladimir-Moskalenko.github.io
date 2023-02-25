@@ -1,0 +1,15 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: arial;
+  color: lime;
+  text-align: center;
+}
+
+p {
+  font-family: arial;
+  color: lime;
+  font-size: 20px;
+}
