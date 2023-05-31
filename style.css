@@ -7,3 +7,13 @@ body {
 a {
     color:rgb(0, 255, 38);
 }
+div.scroll-container {
+    background-color:rgb(0, 0, 0);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+}
+  
+div.scroll-container img {
+    padding: 5px;
+}
