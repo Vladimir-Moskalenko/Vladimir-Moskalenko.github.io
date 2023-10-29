@@ -4,6 +4,12 @@ body {
     font-family: monospace;
     font-size: x-large;
 }
+a {
+    color:rgb(0, 225, 255);
+    background-color:rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: x-large;
+}
 h2 {
     color:rgb(0, 255, 38);
     background-color:rgb(0, 0, 0);
