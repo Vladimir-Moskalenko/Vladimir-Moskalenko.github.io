@@ -10,6 +10,12 @@ imp {
     font-family: monospace;
     font-size: x-large;
 }
+invis {
+    color:rgb(0, 0, 0);
+    background-color:rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: x-large;
+}
 warn {
     color:rgb(255, 255, 0);
     background-color:rgb(0, 0, 0);
@@ -22,6 +28,37 @@ a {
     font-family: monospace;
     font-size: x-large;
 }
+a:link {
+    color:rgb(0, 255, 0);
+    background-color:rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: x-large;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color:rgb(0, 255, 0);
+    background-color:rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: x-large;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color:rgb(255, 0, 0);
+    background-color:rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: x-large;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color:rgb(0, 255, 0);
+    background-color:rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: x-large;
+    text-decoration: underline;
+  }
 h2 {
     color:rgb(0, 255, 0);
     background-color:rgb(0, 0, 0);
