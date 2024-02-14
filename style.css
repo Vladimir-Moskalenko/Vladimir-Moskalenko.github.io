@@ -1,0 +1,25 @@
+body {
+    color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 24pt;
+}
+h1 {
+    color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 48pt;
+    text-align: center;
+}
+h2 {
+    color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 32pt;
+}
+imp {
+    color:rgb(255, 194, 157);
+    background-color:rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 24pt;
+}
