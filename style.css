@@ -1,3 +1,5 @@
+/* Designed by Vladimir Moskalenko in California */
+
 body {
     color:rgb(255, 255, 255);
     background-color:rgb(0, 0, 0);
@@ -30,6 +32,15 @@ imp {
     background-color: #ffffff44;
     border-radius: 50px;
     width: 700px;
+    height: 100px;
+    box-shadow: 0px 0px 15px #ffffff6f;
+}
+
+.smallbanner {
+    margin: auto;
+    background-color: #ffffff44;
+    border-radius: 50px;
+    width: 400px;
     height: 100px;
     box-shadow: 0px 0px 15px #ffffff6f;
 }
