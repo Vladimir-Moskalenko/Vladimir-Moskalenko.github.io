@@ -1,0 +1,23 @@
+———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+To make a double-element bottom sidebar:
+
+<table style="max-width: fit-content; height: 190px; margin: auto;">
+            <tr>
+                <td style="vertical-align:top; width: 140px; padding-top: 0;">
+                    <a href="index.html">
+                        <div class="smallbanner" style="padding:0; flex: 1; width: 100px; right: 0; vertical-align: top;">
+                            <h1 style="font-size:36pt;">Text 1</h1>
+                        </div>
+                    </a>
+                </td>
+                <td style="vertical-align:top; width: 240px; padding-top: 0;">
+                    <a href="index.html">
+                        <div class="smallbanner" style="padding:0; flex: 1; width: 100px; right: 0; vertical-align: top;">
+                            <h1 style="font-size:36pt;">Text 2</h1>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+</table>
+
+———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
