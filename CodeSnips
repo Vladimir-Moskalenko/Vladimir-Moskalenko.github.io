@@ -16,7 +16,7 @@ To make a double-element bottom sidebar:
                             <h1 style="font-size:36pt;">Text 2</h1>
                         </div>
                     </a>
-            </td>
+                </td>
             </tr>
 </table>
 
