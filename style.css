@@ -1,4 +1,5 @@
 /* Designed by Vladimir Moskalenko in California */
+/* Last update on Apr 9, 2024 */
 
 body {
     color:rgb(255, 255, 255);
@@ -20,6 +21,14 @@ h2 {
     background-color:rgb(0, 0, 0);
     font-family: Nunito;
     font-size: 32pt;
+}
+p {
+    color:rgb(255, 255, 255);
+    font-family: Nunito;
+    font-size: 20pt;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 imp {
     color:rgb(255, 194, 157);
@@ -45,12 +54,27 @@ imp {
     box-shadow: 0px 0px 15px #ffffff6f;
 }
 
+.textbox {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff20;
+    border-radius: 50px;
+    width: 75%;
+    box-shadow: 0px 0px 15px #ffffff6f;
+    padding: 40px;
+}
 table {
     width: 100%;
     padding: 20px;
 }
 th {
     height: 160px;
+}
+
+td {
+    overflow: hidden;
 }
 
 .other {
