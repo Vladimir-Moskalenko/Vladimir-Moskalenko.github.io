@@ -98,6 +98,20 @@ lnk {
     line-height: 5rem;
 }
 
+div.scroll-container {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+}
+  
+div.scroll-container img {
+    border-radius: 40px;
+    padding: 5px;
+    width:"733";
+    height:"550";
+}
+
+
 a:link { 
     text-decoration: none; 
 } 
