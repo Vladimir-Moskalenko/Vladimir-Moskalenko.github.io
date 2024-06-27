@@ -6,7 +6,7 @@ body {
     background-color:rgb(142, 153, 221);
     font-family: Nunito;
     font-size: 24pt;
-    background-image: url('/bg.png'); 
+    background-image: url('bg.png'); 
     background-attachment: fixed; 
     background-size: cover;  
     background-repeat: no-repeat; 
