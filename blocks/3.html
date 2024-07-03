@@ -38,10 +38,10 @@
             <p>    1. Disable SIP: reboot into Recovery, open the Terminal (Utilites > Terminal in the menubar), enter the following commands "csrutil disable && csrutil authenticated-root disable". Then reboot.</p>
             <p>    2. Get your disk ID: in macOS, open the Terminal and enter the following command: "diskutil list". In the list, choose your macOS partition name, and remember the diskXsX. Further on, replace diskXsX with the one you saw here.</p>
             <p>    3. Get the livemount: in Terminal, type the following command: "mkdir ~/lvmnt && sudo mount -o nobrowse -t apfs /dev/diskXsX ~/lvmnt"</p>
-            <p>    4. Download the following file: <a href="blocks/Files/3/Assets.car">Assets.car</a>. I manually changed the siri icon so you won't have to.</p>
+            <p>    4. Download the following file: <a href="/blocks/Files/3/Assets.car">Assets.car</a>. I manually changed the siri icon so you won't have to.</p>
             <p>    5. Open Finder and place the file you got above into the folder: "~/lvmnt/System/Library/CoreServices/Siri.bundle/Contents/Resources/". You can press ⇧+⌘+G in Finder to quickly go there</p>
             <p>    6. Apply the changes: in Terminal, type the command: "sudo bless --mount ~/lvmnt --bootefi --create-snapshot"</p>
-            <p>    7. Now reboot! <img href="blocks/Files/3/siri.png" height="20pt"></p>
+            <p>    7. Now reboot! <img href="/blocks/Files/3/siri.png" height="20pt"></p>
             
         </div>
         </div>
