@@ -17,15 +17,19 @@
         <div class="smallbanner" style="width:650px;">
             <h1 style="font-size: 44pt;">#3: New Siri, Old Siri</h1>
         </div>
+        
         <p></p>
+
         <div class="textbox" style="margin-bottom: 0;">
             <p>macOS Sequoia is a great update, but the new siri icon and UI aren't available on intel... tryna fix that!</p>
         </div>
+
         <div class="textbox" style="margin-bottom: 0;">
             <p>So I stumbled upon a way to enable the new Siri UI, using the command "defaults write com.apple.assistant bypassDeviceSupportsSAE -bool true". THe command tells macOS to enable the new Apple Assistant features on any Mac.</p>
             <p>Does it work? Partially. Not all Apple Intelligence files are in place, so the range of changes will vary. On Apple Silicon Macs, the new UI files are there, so it changes the UI and the icon. On intel... something goes wrong.</p>
             <p>All it does on intel is... hide the siri animation. No other changes.</p>
         </div>
+
         <div class="textbox" style="margin-bottom: 0;">
             <p><b>My attempts</b></p>
             <p>    1. 'Change the BoardID.' OCLP time... and it doesn't support Apple Silicon BoardIDs, which is kind of logical. Gotta wait for a reverse-engineered Rosetta 2. Took around 12 years since intel Macs for OCLP to be made, so... :/</p>
@@ -33,17 +37,14 @@
             <p>    3. Manually edit the icon. This one worked</p>
             <p>    4. (Didn't test) Manually inject required files. I'll need an Apple Silicon mac for that, which I don't have. This may technically work, however I doubt I'll ever get to this</p>
         </div>
+    
         <div class="textbox">
             <p><b>How to get the new icon on intel Macs</b> (useless and will NOT work on Apple Silicon macs!)</p>
-            <p>    1. Disable SIP: reboot into Recovery, open the Terminal (Utilites > Terminal in the menubar), enter the following commands "csrutil disable && csrutil authenticated-root disable". Then reboot.</p>
-            <p>    2. Get your disk ID: in macOS, open the Terminal and enter the following command: "diskutil list". In the list, choose your macOS partition name, and remember the diskXsX. Further on, replace diskXsX with the one you saw here.</p>
-            <p>    3. Get the livemount: in Terminal, type the following command: "mkdir ~/lvmnt && sudo mount -o nobrowse -t apfs /dev/diskXsX ~/lvmnt"</p>
-            <p>    4. Download the following file: <a href="/blocks/Files/3/Assets.car">Assets.car</a>. I manually changed the siri icon so you won't have to.</p>
-            <p>    5. Open Finder and place the file you got above into the folder: "~/lvmnt/System/Library/CoreServices/Siri.bundle/Contents/Resources/". You can press ⇧+⌘+G in Finder to quickly go there</p>
-            <p>    6. Apply the changes: in Terminal, type the command: "sudo bless --mount ~/lvmnt --bootefi --create-snapshot"</p>
-            <p>    7. Now reboot! <img href="/blocks/Files/3/siri.png" height="20pt"></p>
-            
-        </div>
+            <p>    1. Gain read/write access to your system by following this <a href="blocks/Tutorials/sysfiles.html">tutorial</a></p>
+            <p>    2. Download the following file: <a href="/blocks/Files/3/Assets.car">Assets.car</a>. I manually changed the siri icon so you won't have to.</p>
+            <p>    3. Open Finder and place the file you got above into the folder: "~/lvmnt/System/Library/CoreServices/Siri.bundle/Contents/Resources/". You can press ⇧+⌘+G in Finder to quickly go there</p>
+            <p>    4. Apply the changes: in Terminal, type the command: "sudo bless --mount ~/lvmnt --bootefi --create-snapshot"</p>
+            <p>    5. Now reboot! You should see the new siri icon in your menubar (not UI, will look into that later)</p> 
         </div>
     </body>
 </html>

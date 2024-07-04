@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Designed by Vladimir Moskalenko in California -->
+<!-- Last update on: July 2, 2024 -->
+
+<html lang = en>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+        <title>Vladimir-Moskalenko</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.png?">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="background-image: none; background-color: none; background: none;">
+        <div class="smallbanner">
+            <p>How to gain r/w access to your system</p>
+        </div>
+        <div class="textbox">
+            <p>    1. Disable SIP: reboot into Recovery, open the Terminal (Utilites > Terminal in the menubar), enter the following commands "csrutil disable && csrutil authenticated-root disable". Then reboot.</p>
+            <p>    2. Get your disk ID: in macOS, open the Terminal and enter the following command: "diskutil list". In the list, choose your macOS partition name, and remember the diskXsX. Further on, replace diskXsX with the one you saw here.</p>
+            <p>    3. Get the livemount: in Terminal, type the following command: "mkdir ~/lvmnt && sudo mount -o nobrowse -t apfs /dev/diskXsX ~/lvmnt"</p>
+            <p>    4. In your home directory in Finder, open the folder livemount. You just gained read/write access to your full drive</p>
+            <p>    5. After you're done, type the command: "sudo bless --mount ~/lvmnt --bootefi --create-snapshot"</p>
+            <p>    6. If you're done for the day, it's highly recommended to enable SIP. Reboot into Recovery, open Terminal and type: "csrutil enable && csrutil authenticated-root enable"</p>
+        </div>
+        <div class="textbox">
+            <p>  Here's a tutorial on how to disable SIP: <a href="https://youtu.be/Xg7RJDiVeds">Disable SIP</a></p>
+        </div>
+        </div>
+    </body>
+</html>
