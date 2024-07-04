@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Designed by Vladimir Moskalenko in California -->
+<!-- Last update on: July 2, 2024 -->
+
+<html lang = en>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+        <title>Vladimir-Moskalenko</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.png?">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="background-image: none; background-color: none; background: none;">
+        <div class="smallbanner" style="width:650px;">
+            <h1 style="font-size: 44pt;">#4: First! customized Sequoia background</h1>
+        </div>
+        
+        <p></p>
+
+        <div class="textbox" style="margin-bottom: 0;">
+            <p>The first macOS version since Monterey, Sequoia has an accessible wallpaper/screensaver file! Let's edit it together!</p>
+        </div>
+
+        <div class="textbox" style="margin-bottom: 0;">
+            <p>First, gain read/write access to your system by following this <a href="blocks/Tutorials/sysfiles.html">tutorial</a></p>
+            <p>The wallpaper isn't stored, like normally in "/System/Library/Desktop Pictures", it's stored in "/System/Library/ExtensionKit/Extensions/WallpaperHeliosExtension.appex". Be sure to go to that path in the ~/lvmnt folder!</p>
+            <p>Now, right-click the WallpaperHeliosExtension.appex file and select "Show Package Contents". Go to Contents/Resources. You're in!</p>
+            <p>What do all these files mean? The .exr files are the ones you will want to edit. They hold the data for the gradients used in the wallpapers; the .usdc files store the data of the camera path and the trees, while the rest of the files store the data of how everything works together.</p>
+            <p>You can try to manually edit the .exr files yourself, using a third-party painting tool or just by editing them in Preview.</p>
+            <p>I've also manually edited one, to make it look like "MacOS Weed," download it <a href="/Users/vladimir/Documents/GitHub/Vladimir-Moskalenko.github.io/blocks/Files/4/MacOS Weed.appex">here</a>, then rename it into "WallpaperHeliosExtension.appex" and move it into the folder you opened above</p>
+            <p>In case you wanna revert, you can download the default Sequoia wallpaper <a href="/Users/vladimir/Documents/GitHub/Vladimir-Moskalenko.github.io/blocks/Files/4/SequoiaDefault.appex">here</a></p>
+        </div>
+    </body>
+</html>
