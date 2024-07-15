@@ -1,15 +1,13 @@
 /* Designed by Vladimir Moskalenko in California */
-/* Last update on June 26, 2024 */
+/* Last update on July 15, 2024 */
 
 body {
     color:rgb(0, 0, 0);
     background-color:rgb(127, 127, 127);
     font-family: Nunito;
     font-size: 24pt;
-    background-image: url('bg.png'); 
-    background-attachment: fixed; 
-    background-size: cover;  
-    background-repeat: no-repeat; 
+    background-image: url('img.png'); 
+    background-size: max(100%, 100vw) max(100%, 100vh); 
 }
 h1 {
     color:rgb(0, 0, 0);
