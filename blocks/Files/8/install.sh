@@ -46,6 +46,8 @@ git clone https://github.com/Vladimir-Moskalenko/LicK
 cd LicK
 chmod +x installIcons.sh
 ./installIcons.sh
+echo Cleaning up...
+rm -rf ~/Downloads/LicK
 }
 
 
@@ -60,7 +62,7 @@ curl https://lmnt.me/archive/wallpapers/apple/quantum-foam/heic/quantum-foam-blu
 echo This installer supports ONLY macOS Sonoma! It WILL break your system on any other macOS version!
 echo
 echo To install the theme, type t
-echo To get the wallpapers, type w
+echo To install the icons, type i
 echo To make a complete installation, type c
 echo Any other action will abort.
 
@@ -70,18 +72,22 @@ echo $usrInput
  
 if [ $usrInput = "t" ]; then
 	installAquaTheme
+	echo Installation complete! Now, reboot your computer to apply.
 fi
 
 if [ $usrInput = "w" ]; then
-	echo w
 	getWallpapers
+	echo Installation complete! Now, reboot your computer to apply.
 fi
 
 if [ $usrInput = "c" ]; then
 	getWallpapers
 	installAquaTheme
+	installAquaIcons
+	echo Installation complete! Now, reboot your computer to apply.
 fi
 
 if [ $usrInput = "i" ]; then
 	installAquaIcons
+	echo Installation complete! Now, reboot your computer to apply.
 fi
