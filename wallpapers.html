@@ -1,218 +1,305 @@
-<!DOCTYPE html>
-<!-- Designed by Vladimir Moskalenko in California -->
-<!-- Last update on: Jan 7, 2024 -->
-
-<html lang = en>
+<!doctype html>
+<html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-        <title>Vladimir-Moskalenko</title>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.png?">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
-        <div class="smallbanner">
-            <h1>Wallpapers!</h1>
-        </div>
-        <p></p>
+        <canvas id="bgDots" aria-hidden="true" background="black"></canvas>
+        <header class="welcome">
+            <h1>Wallpapers</h1>
+        </header>
         <div class="textbox">
-            <p>A list of wallpapers, made by me. </br> To download, either drag them into your Files app, or right-click the image and select Download...</p>
+            <p>
+                A list of wallpapers, made by me. <br />
+                To download, either drag them into your Files app, or right-click the image and select Download...
+            </p>
         </div>
         <div class="textbox">
             <p>hello 2025</p>
             <p>hello, once more</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/hello 25/hello25_bloiple.heic" width="550" height="550">
-                <img src="Files/wallpapers/hello 25/hello25_re.heic" width="550" height="550">
-                <img src="Files/wallpapers/hello 25/hello25_gree.heic" width="550" height="550">
-                <img src="Files/wallpapers/hello 25/hello25_bloiple_dark.png" width="550" height="550">
-                <img src="Files/wallpapers/hello 25/hello25_re_dark.png" width="550" height="550">
-                <img src="Files/wallpapers/hello 25/hello25_gree_dark.png" width="550" height="550">
+                <img src="Files/wallpapers/hello 25/hello25_bloiple.heic" width="550" height="550" />
+                <img src="Files/wallpapers/hello 25/hello25_re.heic" width="550" height="550" />
+                <img src="Files/wallpapers/hello 25/hello25_gree.heic" width="550" height="550" />
+                <img src="Files/wallpapers/hello 25/hello25_bloiple_dark.png" width="550" height="550" />
+                <img src="Files/wallpapers/hello 25/hello25_re_dark.png" width="550" height="550" />
+                <img src="Files/wallpapers/hello 25/hello25_gree_dark.png" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
             <p>s⊚litude</p>
             <p></p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/solitude/solitude.heic" width="550" height="550">
-                <img src="Files/wallpapers/solitude/solitude_l.png" width="550" height="550">
-                <img src="Files/wallpapers/solitude/solitude_d.png" width="550" height="550">
+                <img src="Files/wallpapers/solitude/solitude.heic" width="550" height="550" />
+                <img src="Files/wallpapers/solitude/solitude_l.png" width="550" height="550" />
+                <img src="Files/wallpapers/solitude/solitude_d.png" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
-            <p> Black</p>
+            <p>Black</p>
             <p>Trash can vibes (IYKYK)</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/Jet Black/SF_Pro.jpg" width="550" height="550">
-                <img src="Files/wallpapers/Jet Black/SF_Pro_2.jpg" width="550" height="550">
+                <img src="Files/wallpapers/Jet Black/SF_Pro.jpg" width="550" height="550" />
+                <img src="Files/wallpapers/Jet Black/SF_Pro_2.jpg" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
             <p>Snow Hills</p>
             <p>* ❅ ❆ ❄</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/Snow Hills/Snow Hills.heic" width="550" height="550">
-                <img src="Files/wallpapers/Snow Hills/Graphite.png" width="550" height="550">
-                <img src="Files/wallpapers/Snow Hills/Palladium.png" width="550" height="550">
+                <img src="Files/wallpapers/Snow Hills/Snow Hills.heic" width="550" height="550" />
+                <img src="Files/wallpapers/Snow Hills/Graphite.png" width="550" height="550" />
+                <img src="Files/wallpapers/Snow Hills/Palladium.png" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
             <p>𝕔𝕝𝕒𝕤𝕤𝕚𝕔</p>
             <p>Think Different. Copy Nobody. ʸᵉˢ ʸᵒᵘ ᵈᵒ</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/Classic/logo.heic" width="550" height="550">
-                <img src="Files/wallpapers/Classic/type.heic" width="550" height="550">
-                <img src="Files/wallpapers/Classic/TD 1.heic" width="550" height="550">
-                <img src="Files/wallpapers/Classic/TD 2.heic" width="550" height="550">
-                <img src="Files/wallpapers/Classic/TD 3.heic" width="550" height="550">
-                <img src="Files/wallpapers/Classic/TD 4.heic" width="550" height="550">
-                <img src="Files/wallpapers/Classic/TD 5.heic" width="550" height="550">
-                <img src="Files/wallpapers/Classic/TD 6.heic" width="550" height="550">
-                <img src="Files/wallpapers/Classic/TD 7.heic" width="550" height="550">
+                <img src="Files/wallpapers/Classic/logo.heic" width="550" height="550" />
+                <img src="Files/wallpapers/Classic/type.heic" width="550" height="550" />
+                <img src="Files/wallpapers/Classic/TD 1.heic" width="550" height="550" />
+                <img src="Files/wallpapers/Classic/TD 2.heic" width="550" height="550" />
+                <img src="Files/wallpapers/Classic/TD 3.heic" width="550" height="550" />
+                <img src="Files/wallpapers/Classic/TD 4.heic" width="550" height="550" />
+                <img src="Files/wallpapers/Classic/TD 5.heic" width="550" height="550" />
+                <img src="Files/wallpapers/Classic/TD 6.heic" width="550" height="550" />
+                <img src="Files/wallpapers/Classic/TD 7.heic" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
             <p>hi: Plus Pro Max Ultra</p>
             <p>Inspired by I. Created with \hi.</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/hiPlusProMaxUltra/hiPlusProMaxUltra.heic" width="550" height="550">
+                <img src="Files/wallpapers/hiPlusProMaxUltra/hiPlusProMaxUltra.heic" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
             <p>iCloud. A close recreation of Apple's new iCloud wallpapers.</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/iCloud/iCloud.heic" width="550" height="273.2629654255">
-                <img src="Files/wallpapers/iCloud/iCloudl.png" width="550" height="273.2629654255">
-                <img src="Files/wallpapers/iCloud/iCloudD.png" width="550" height="273.2629654255">
+                <img src="Files/wallpapers/iCloud/iCloud.heic" width="550" height="273.2629654255" />
+                <img src="Files/wallpapers/iCloud/iCloudl.png" width="550" height="273.2629654255" />
+                <img src="Files/wallpapers/iCloud/iCloudD.png" width="550" height="273.2629654255" />
             </div>
         </div>
         <div class="textbox">
             <p>/16. Happy 16th Birthday, to me! Here's a nice pack of wallpapers to celebrate</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/16/16.heic" width="550" height="550">
-                <img src="Files/wallpapers/16/16 dark.jpg" width="550" height="550">
-                <img src="Files/wallpapers/16/16 light.jpg" width="550" height="550">
+                <img src="Files/wallpapers/16/16.heic" width="550" height="550" />
+                <img src="Files/wallpapers/16/16 dark.jpg" width="550" height="550" />
+                <img src="Files/wallpapers/16/16 light.jpg" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
             <p>Ubuntu Oracular Oriole 🐦‍⬛</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/Ubuntu/Oriole Mascot Light.png" width="977" height="550">
-                <img src="Files/wallpapers/Ubuntu/Oriole Mascot Dark.png" width="977" height="550">
-                <img src="Files/wallpapers/Ubuntu/Oriole Mascot 6k Dynamic.heic" width="550" height="550">
-                <img src="Files/wallpapers/Ubuntu/Oriole Mascot Dynamic.heic" width="977" height="550">
-                <img src="Files/wallpapers/Ubuntu/Ubuntu 20 light.png" width="550" height="550">
-                <img src="Files/wallpapers/Ubuntu/Ubuntu 20 Dark.png" width="550" height="550">
-                <img src="Files/wallpapers/Ubuntu/Ubuntu 20 Dynamic.heic" width="550" height="550">
+                <img src="Files/wallpapers/Ubuntu/Oriole Mascot Light.png" width="977" height="550" />
+                <img src="Files/wallpapers/Ubuntu/Oriole Mascot Dark.png" width="977" height="550" />
+                <img src="Files/wallpapers/Ubuntu/Oriole Mascot 6k Dynamic.heic" width="550" height="550" />
+                <img src="Files/wallpapers/Ubuntu/Oriole Mascot Dynamic.heic" width="977" height="550" />
+                <img src="Files/wallpapers/Ubuntu/Ubuntu 20 light.png" width="550" height="550" />
+                <img src="Files/wallpapers/Ubuntu/Ubuntu 20 Dark.png" width="550" height="550" />
+                <img src="Files/wallpapers/Ubuntu/Ubuntu 20 Dynamic.heic" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
             <p>\/\\\: Summer's in the air. The REAL summer started, here's some REAL wallpapers to celebrate!</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/summer 24/Solar.heic" width="550" height="550">
-                <img src="Files/wallpapers/summer 24/Night.png" width="550" height="550">
-                <img src="Files/wallpapers/summer 24/Day.png" width="550" height="550">
+                <img src="Files/wallpapers/summer 24/Solar.heic" width="550" height="550" />
+                <img src="Files/wallpapers/summer 24/Night.png" width="550" height="550" />
+                <img src="Files/wallpapers/summer 24/Day.png" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
             <p>O/S blur: '24 edition. A wallpaper pack based on  Intelligence and macOS Sequoia.</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/O/I.heic" width="550" height="550">
-                <img src="Files/wallpapers/O/Sequoia Blur.heic" width="550" height="550">
+                <img src="Files/wallpapers/O/I.heic" width="550" height="550" />
+                <img src="Files/wallpapers/O/Sequoia Blur.heic" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
             <p>McIntosh-ed: kinda a celeration of the 40 years of the Macintosh, but also delayed by half a year</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/McIntoshed/40Mac.heic" width="550" height="550">
-                <img src="Files/wallpapers/McIntoshed/vm8.png" width="550" height="550">
-                <img src="Files/wallpapers/McIntoshed/Lion.png" width="550" height="550">
-                <img src="Files/wallpapers/McIntoshed/Mac OS Lion.png" width="550" height="550">
-                <img src="Files/wallpapers/McIntoshed/lionx9.png" width="550" height="550">
+                <img src="Files/wallpapers/McIntoshed/40Mac.heic" width="550" height="550" />
+                <img src="Files/wallpapers/McIntoshed/vm8.png" width="550" height="550" />
+                <img src="Files/wallpapers/McIntoshed/Lion.png" width="550" height="550" />
+                <img src="Files/wallpapers/McIntoshed/Mac OS Lion.png" width="550" height="550" />
+                <img src="Files/wallpapers/McIntoshed/lionx9.png" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
-            <p>iWork++, now with XCode.  All (but Siri) in dynamic 5k</p>
+            <p>iWork++, now with XCode. All (but Siri) in dynamic 5k</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/iWork+/Xcode.heic" width="550" height="550">
-                <img src="Files/wallpapers/iWork+/Finder.heic" width="550" height="550">
-                <img src="Files/wallpapers/iWork+/Pages.heic" width="550" height="550">
-                <img src="Files/wallpapers/iWork+/Keynote.heic" width="550" height="550">
-                <img src="Files/wallpapers/iWork+/Numbers.heic" width="550" height="550">
-                <img src="Files/wallpapers/iWork+/Siri.png" width="550" height="550">
-                <img src="Files/wallpapers/iWork+/iCloud.heic" width="1200" height="550">
+                <img src="Files/wallpapers/iWork+/Xcode.heic" width="550" height="550" />
+                <img src="Files/wallpapers/iWork+/Finder.heic" width="550" height="550" />
+                <img src="Files/wallpapers/iWork+/Pages.heic" width="550" height="550" />
+                <img src="Files/wallpapers/iWork+/Keynote.heic" width="550" height="550" />
+                <img src="Files/wallpapers/iWork+/Numbers.heic" width="550" height="550" />
+                <img src="Files/wallpapers/iWork+/Siri.png" width="550" height="550" />
+                <img src="Files/wallpapers/iWork+/iCloud.heic" width="1200" height="550" />
             </div>
         </div>
         <div class="textbox">
-            <p>Ubuntu Sur, created by me to celebrate (💀) my Ubuntu Challenge (aka. How long will I survive with Ubuntu only?)</p>
+            <p>
+                Ubuntu Sur, created by me to celebrate (💀) my Ubuntu Challenge (aka. How long will I survive with
+                Ubuntu only?)
+            </p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/Ubuntu Sur/Ubuntu Sur.heic" width="550" height="550">
-                <img src="Files/wallpapers/Ubuntu Sur/Ubuntu Sur Light.png" width="550" height="550">
-                <img src="Files/wallpapers/Ubuntu Sur/Ubuntu Sur Dark.png" width="550" height="550">
+                <img src="Files/wallpapers/Ubuntu Sur/Ubuntu Sur.heic" width="550" height="550" />
+                <img src="Files/wallpapers/Ubuntu Sur/Ubuntu Sur Light.png" width="550" height="550" />
+                <img src="Files/wallpapers/Ubuntu Sur/Ubuntu Sur Dark.png" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
             <p>Tiers, wallpapers celebrating the viral (on X / Twitter at least) Apple Big Sur design video</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/tiers/Tiers.heic" width="550" height="550">
-                <img src="Files/wallpapers/tiers/Tiers l.png" width="550" height="550">
-                <img src="Files/wallpapers/tiers/Tiers d.png" width="550" height="550">
+                <img src="Files/wallpapers/tiers/Tiers.heic" width="550" height="550" />
+                <img src="Files/wallpapers/tiers/Tiers l.png" width="550" height="550" />
+                <img src="Files/wallpapers/tiers/Tiers d.png" width="550" height="550" />
             </div>
         </div>
         <div class="textbox">
             <p>Hello '24. Apple's 48th birthday. In glorious 6k.</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/hello 24/6k/classic dark.heic" width="550" height="550">
-                <img src="Files/wallpapers/hello 24/6k/classic.heic" width="550" height="550">
-                <img src="Files/wallpapers/hello 24/6k/e dark.heic" width="550" height="550">
-                <img src="Files/wallpapers/hello 24/6k/e.heic" width="550" height="550">
-                <img src="Files/wallpapers/hello 24/6k/h dark.heic" width="550" height="550">
-                <img src="Files/wallpapers/hello 24/6k/h.heic" width="550" height="550">
-                <img src="Files/wallpapers/hello 24/6k/l dark.heic" width="550" height="550">
-                <img src="Files/wallpapers/hello 24/6k/l.heic" width="550" height="550">
-                <img src="Files/wallpapers/hello 24/6k/o dark.heic" width="550" height="550">
-                <img src="Files/wallpapers/hello 24/6k/o.heic" width="550" height="550">
+                <img src="Files/wallpapers/hello 24/6k/classic dark.heic" width="550" height="550" />
+                <img src="Files/wallpapers/hello 24/6k/classic.heic" width="550" height="550" />
+                <img src="Files/wallpapers/hello 24/6k/e dark.heic" width="550" height="550" />
+                <img src="Files/wallpapers/hello 24/6k/e.heic" width="550" height="550" />
+                <img src="Files/wallpapers/hello 24/6k/h dark.heic" width="550" height="550" />
+                <img src="Files/wallpapers/hello 24/6k/h.heic" width="550" height="550" />
+                <img src="Files/wallpapers/hello 24/6k/l dark.heic" width="550" height="550" />
+                <img src="Files/wallpapers/hello 24/6k/l.heic" width="550" height="550" />
+                <img src="Files/wallpapers/hello 24/6k/o dark.heic" width="550" height="550" />
+                <img src="Files/wallpapers/hello 24/6k/o.heic" width="550" height="550" />
             </div>
             <p>... and in Dynamic 5k (MacOS only!)</p>
             <div class="scroll-container">
-                <a href="Files/wallpapers/hello 24/dynamic/classic.heic"><img src="Files/wallpapers/hello 24/dynamic/classic.heic" width="550" height="550"></a>
-                <a href="Files/wallpapers/hello 24/dynamic/e.heic"><img src="Files/wallpapers/hello 24/dynamic/e.heic" width="550" height="550"></a>
-                <a href="Files/wallpapers/hello 24/dynamic/h.heic"><img src="Files/wallpapers/hello 24/dynamic/h.heic" width="550" height="550"></a>
-                <a href="Files/wallpapers/hello 24/dynamic/l.heic"><img src="Files/wallpapers/hello 24/dynamic/l.heic" width="550" height="550"></a>
-                <a href="Files/wallpapers/hello 24/dynamic/o.heic"><img src="Files/wallpapers/hello 24/dynamic/o.heic" width="550" height="550"></a>
+                <a href="Files/wallpapers/hello 24/dynamic/classic.heic"
+                    ><img src="Files/wallpapers/hello 24/dynamic/classic.heic" width="550" height="550"
+                /></a>
+                <a href="Files/wallpapers/hello 24/dynamic/e.heic"
+                    ><img src="Files/wallpapers/hello 24/dynamic/e.heic" width="550" height="550"
+                /></a>
+                <a href="Files/wallpapers/hello 24/dynamic/h.heic"
+                    ><img src="Files/wallpapers/hello 24/dynamic/h.heic" width="550" height="550"
+                /></a>
+                <a href="Files/wallpapers/hello 24/dynamic/l.heic"
+                    ><img src="Files/wallpapers/hello 24/dynamic/l.heic" width="550" height="550"
+                /></a>
+                <a href="Files/wallpapers/hello 24/dynamic/o.heic"
+                    ><img src="Files/wallpapers/hello 24/dynamic/o.heic" width="550" height="550"
+                /></a>
             </div>
         </div>
         <div class="textbox">
-            <p>Hello '23. Apple's 47th birthday wallpapers, in both dark and light mode. Runnin' across all CPUs and processors Apple used in its' Macs. PPC, intel, intel Celery (for those with a weak computer) and Apple Silicon available!</p>
+            <p>
+                Hello '23. Apple's 47th birthday wallpapers, in both dark and light mode. Runnin' across all CPUs and
+                processors Apple used in its' Macs. PPC, intel, intel Celery (for those with a weak computer) and Apple
+                Silicon available!
+            </p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/hello 23/hello.heic" width="880" height="550">
-                <img src="Files/wallpapers/hello 23/hello celery.heic" width="880" height="550">
-                <img src="Files/wallpapers/hello 23/hello i5.heic" width="880" height="550">
-                <img src="Files/wallpapers/hello 23/hello M1.heic" width="880" height="550">
-
+                <img src="Files/wallpapers/hello 23/hello.heic" width="880" height="550" />
+                <img src="Files/wallpapers/hello 23/hello celery.heic" width="880" height="550" />
+                <img src="Files/wallpapers/hello 23/hello i5.heic" width="880" height="550" />
+                <img src="Files/wallpapers/hello 23/hello M1.heic" width="880" height="550" />
             </div>
         </div>
         <div class="textbox">
             <p>VM Classic: my very, very first wallpaper, made all the way back on April 9 2023!</p>
             <div class="scroll-container">
-                <img src="Files/wallpapers/23/Circles Dynamic.heic" width="880" height="550">
-
+                <img src="Files/wallpapers/23/Circles Dynamic.heic" width="880" height="550" />
             </div>
         </div>
-        <table style="height: 190px; margin: auto; position:fixed; bottom: 0; justify-content: center; width: 100%">
-            <tr>
-                <td style="vertical-align:top; width: 240px; padding-top: 0;">
-                    <a href="index.html">
-                        <div class="smallbanner" style="padding:0; flex: 1; width: 200px; right: 0; vertical-align: top;">
-                            <h1 style="font-size:36pt;">🏠</h1>
-                        </div>
-                    </a>
-            </td>
-            </tr>
-        </table>
-        </div>
+
+        <script>
+            (() => {
+                const canvas = document.getElementById("bgDots");
+                const ctx = canvas.getContext("2d", { alpha: true });
+
+                let w, h, dpr;
+                const spacing = 24;
+                const baseR = 1;
+                const maxR = 2;
+                const influence = 100;
+
+                let mouseX = -9999,
+                    mouseY = -9999;
+
+                function resize() {
+                    dpr = Math.max(1, window.devicePixelRatio || 1);
+                    w = window.innerWidth;
+                    h = window.innerHeight;
+
+                    canvas.width = Math.floor(w * dpr);
+                    canvas.height = Math.floor(h * dpr);
+                    canvas.style.width = w + "px";
+                    canvas.style.height = h + "px";
+
+                    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                }
+
+                window.addEventListener("resize", resize, { passive: true });
+
+                window.addEventListener(
+                    "mousemove",
+                    (e) => {
+                        mouseX = e.clientX;
+                        mouseY = e.clientY;
+                    },
+                    { passive: true }
+                );
+
+                // Also handle touch
+                window.addEventListener(
+                    "touchmove",
+                    (e) => {
+                        const t = e.touches[0];
+                        if (t) {
+                            mouseX = t.clientX;
+                            mouseY = t.clientY;
+                        }
+                    },
+                    { passive: true }
+                );
+
+                function draw() {
+                    ctx.clearRect(0, 0, w, h);
+
+                    // optional: subtle background like your radial-gradient
+                    // ctx.fillStyle = 'transparent';
+                    // ctx.fillRect(0, 0, w, h);
+
+                    for (let y = 0; y <= h; y += spacing) {
+                        for (let x = 0; x <= w; x += spacing) {
+                            const dx = x - mouseX;
+                            const dy = y - mouseY;
+                            const dist = Math.hypot(dx, dy);
+
+                            // 0..1 where 1 is near the mouse
+                            const t = Math.max(0, 1 - dist / influence);
+
+                            // radius from baseR to maxR
+                            const r = baseR + t * (maxR - baseR);
+
+                            ctx.beginPath();
+                            ctx.arc(x, y, r, 0, Math.PI * 2);
+
+                            // match your dot color
+                            ctx.fillStyle = "#d9d9d9";
+                            ctx.fill();
+                        }
+                    }
+
+                    requestAnimationFrame(draw);
+                }
+
+                resize();
+                draw();
+            })();
+        </script>
     </body>
 </html>

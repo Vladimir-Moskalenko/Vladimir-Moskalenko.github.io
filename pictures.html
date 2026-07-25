@@ -1,156 +1,246 @@
-<!DOCTYPE html>
-<!-- Designed by Vladimir Moskalenko in California -->
-<!-- Last update on: July 31, 2024 -->
-<!-- Last picture update on: July 31, 2024 -->
-
-<html lang = en>
+<!doctype html>
+<html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-        <title>Vladimir-Moskalenko</title>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.png?">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
-        <div class="smallbanner">
-            <h1>My photos</h1>
-        </div>
-        <p></p>        
+        <canvas id="bgDots" aria-hidden="true" background="black"></canvas>
+        <header class="welcome">
+            <h1>Photo</h1>
+        </header>
         <div class="textbox">
-            <p>And Zion National Park 2024</p>
+            <h1>Zion National Park (2024)</h1>
             <div class="scroll-container">
-                <img src="Files/Images/zion/Zion1.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/zion/Zion2.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/zion/Zion3.JPG" alt="" width="550" height="733">
-                <img src="Files/Images/zion/Zion4.JPG" alt="" width="550" height="733">
-                <img src="Files/Images/zion/Zion5.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/zion/Zion6.JPG" alt="" width="550" height="733">
-                <img src="Files/Images/zion/Zion7.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/zion/Zion8.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/zion/Zion9.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/zion/Zion10.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/zion/Zion11.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/zion/Zion12.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/zion/Zion13.JPG" alt="" width="550" height="733">
+                <img src="Files/Images/zion/Zion1.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/zion/Zion2.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/zion/Zion3.JPG" alt="" width="550" height="733" />
+                <img src="Files/Images/zion/Zion4.JPG" alt="" width="550" height="733" />
+                <img src="Files/Images/zion/Zion5.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/zion/Zion6.JPG" alt="" width="550" height="733" />
+                <img src="Files/Images/zion/Zion7.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/zion/Zion8.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/zion/Zion9.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/zion/Zion10.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/zion/Zion11.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/zion/Zion12.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/zion/Zion13.JPG" alt="" width="550" height="733" />
             </div>
         </div>
-        </div><div class="textbox">
-            <p>Bryce Canyon 2024</p>
-            <p>Link to iCloud album: https://v.gd/VMBryce2024</p>
+        <div class="textbox">
+            <p>Bryce Canyon (2024)</p>
             <div class="scroll-container">
-                <img src="Files/Images/bryce/Bryce1.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/bryce/Bryce2.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/bryce/Bryce3.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/bryce/Bryce4.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/bryce/Bryce5.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/bryce/Bryce6.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/bryce/Bryce7.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/bryce/Bryce8.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/bryce/Bryce9.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/bryce/Bryce10.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/bryce/Bryce11.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/bryce/Bryce12.JPG" alt="" width="550" height="733">
-                <img src="Files/Images/bryce/Bryce13.JPG" alt="" width="733" height="550">
+                <img src="Files/Images/bryce/Bryce1.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/bryce/Bryce2.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/bryce/Bryce3.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/bryce/Bryce4.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/bryce/Bryce5.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/bryce/Bryce6.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/bryce/Bryce7.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/bryce/Bryce8.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/bryce/Bryce9.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/bryce/Bryce10.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/bryce/Bryce11.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/bryce/Bryce12.JPG" alt="" width="550" height="733" />
+                <img src="Files/Images/bryce/Bryce13.JPG" alt="" width="733" height="550" />
             </div>
         </div>
-        </div><div class="textbox">
-            <p>On the way home from Yellowstone, we've traveled to Arches NP as well</p>
-            <p>Link to iCloud album: https://v.gd/VMArches2024</p>
+        <div class="textbox">
+            <p>Arches NP (2024)</p>
             <div class="scroll-container">
-                <img src="Files/Images/arches/Arches1.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches2.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches3.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches4.JPG" alt="" width="550" height="733">
-                <img src="Files/Images/arches/Arches5.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches6.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches7.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches8.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches9.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches10.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches11.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches12.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches13.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches14.JPG" alt="" width="550" height="733">
-                <img src="Files/Images/arches/Arches15.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches16.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches17.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches18.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/arches/Arches19.JPG" alt="" width="733" height="550">
-                
-                
+                <img src="Files/Images/arches/Arches1.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches2.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches3.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches4.JPG" alt="" width="550" height="733" />
+                <img src="Files/Images/arches/Arches5.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches6.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches7.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches8.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches9.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches10.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches11.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches12.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches13.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches14.JPG" alt="" width="550" height="733" />
+                <img src="Files/Images/arches/Arches15.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches16.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches17.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches18.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/arches/Arches19.JPG" alt="" width="733" height="550" />
             </div>
         </div>
-        </div><div class="textbox">
-            <p>Yell oh stone: June 2024 (not my joke but the og guy will probably never find out lol)</p>
-            <p>Link to iCloud album: http://v.gd/VMyellowstone24</p>
+        <div class="textbox">
+            <p>Yellowstone NP (2024)</p>
             <div class="scroll-container">
-                <img src="Files/Images/yellowstone/Yellowstone1.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone2.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone3.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone4.JPG" alt="" width="412.7" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone5.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone6.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone7.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone8.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone9.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone10.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone11.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone12.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone13.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone14.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone15.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone16.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone17.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone18.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone19.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone20.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone21.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone22.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone23.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone24.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone25.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone26.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone27.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone28.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone29.JPG" alt="" width="412.7" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone30.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone31.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone32.JPG" alt="" width="412.7" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone33.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone34.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone35.JPG" alt="" width="412.7" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone36.JPG" alt="" width="733" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone37.JPG" alt="" width="412.7" height="550">
-                <img src="Files/Images/yellowstone/Yellowstone38.JPG" alt="" width="733" height="550">
-                
+                <img src="Files/Images/yellowstone/Yellowstone1.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone2.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone3.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone4.JPG" alt="" width="412.7" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone5.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone6.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone7.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone8.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone9.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone10.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone11.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone12.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone13.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone14.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone15.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone16.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone17.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone18.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone19.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone20.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone21.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone22.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone23.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone24.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone25.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone26.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone27.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone28.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone29.JPG" alt="" width="412.7" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone30.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone31.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone32.JPG" alt="" width="412.7" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone33.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone34.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone35.JPG" alt="" width="412.7" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone36.JPG" alt="" width="733" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone37.JPG" alt="" width="412.7" height="550" />
+                <img src="Files/Images/yellowstone/Yellowstone38.JPG" alt="" width="733" height="550" />
             </div>
         </div>
         <div class="textbox">
             <div class="scroll-container">
-                <img src="Files/Images/Sonora_Lichen.png" alt="Sonora Lichen. AKA MacOS Sonora wallpaper" width="733" height="550">
-                <img src="Files/Images/Sunset_hills.jpg" alt="Just meh dad and sista walkin 'round the Dublin hills during sunset. Barely got to our car before nighttime" width="733" height="550">
-                <img src="Files/Images/Dome1.JPG" alt="Half Dome, view from back" width="733" height="550">
-                <img src="Files/Images/Yosemite.JPG" alt="Half Dome and El Capitan, view from Big Oak Flat Rd. Turnout" width="733" height="550">
-                <img src="Files/Images/Cloud_rest.JPG" alt="View of Clouds' rest, Yosemite" width="733" height="550">
-                <img src="Files/Images/San_Gregorio.JPG" alt="CA beaches, with San San_Gregorio being the first visible" width="733" height="550">
-                <img src="Files/Images/Splash.JPG" alt="Wave splashes, Bean Hollow State Beach" width="733" height="550">
-                <img src="Files/Images/Sunset_Island.JPG" alt="Random island, photoed on a sunset. Spot the ghost!" width="733" height="550">
+                <img
+                    src="Files/Images/Sonora_Lichen.png"
+                    alt="Sonora Lichen. AKA MacOS Sonora wallpaper"
+                    width="733"
+                    height="550" />
+                <img
+                    src="Files/Images/Sunset_hills.jpg"
+                    alt="Just meh dad and sista walkin 'round the Dublin hills during sunset. Barely got to our car before nighttime"
+                    width="733"
+                    height="550" />
+                <img src="Files/Images/Dome1.JPG" alt="Half Dome, view from back" width="733" height="550" />
+                <img
+                    src="Files/Images/Yosemite.JPG"
+                    alt="Half Dome and El Capitan, view from Big Oak Flat Rd. Turnout"
+                    width="733"
+                    height="550" />
+                <img src="Files/Images/Cloud_rest.JPG" alt="View of Clouds' rest, Yosemite" width="733" height="550" />
+                <img
+                    src="Files/Images/San_Gregorio.JPG"
+                    alt="CA beaches, with San San_Gregorio being the first visible"
+                    width="733"
+                    height="550" />
+                <img
+                    src="Files/Images/Splash.JPG"
+                    alt="Wave splashes, Bean Hollow State Beach"
+                    width="733"
+                    height="550" />
+                <img
+                    src="Files/Images/Sunset_Island.JPG"
+                    alt="Random island, photoed on a sunset. Spot the ghost!"
+                    width="733"
+                    height="550" />
             </div>
         </div>
-        <table style="height: 190px; margin: auto; position:fixed; bottom: 0; justify-content: center; width: 100%">
+        <table style="height: 190px; margin: auto; position: fixed; bottom: 0; justify-content: center; width: 100%">
             <tr>
-                <td style="vertical-align:top; width: 240px; padding-top: 0;">
-                    <a href="index.html">
-                        <div class="smallbanner" style="padding:0; flex: 1; width: 200px; right: 0; vertical-align: top;">
-                            <h1 style="font-size:36pt;">🏠</h1>
-                        </div>
-                    </a>
-            </td>
             </tr>
         </table>
-        </div>
+
+        <script>
+            (() => {
+                const canvas = document.getElementById("bgDots");
+                const ctx = canvas.getContext("2d", { alpha: true });
+
+                let w, h, dpr;
+                const spacing = 24;
+                const baseR = 1;
+                const maxR = 2;
+                const influence = 100;
+
+                let mouseX = -9999,
+                    mouseY = -9999;
+
+                function resize() {
+                    dpr = Math.max(1, window.devicePixelRatio || 1);
+                    w = window.innerWidth;
+                    h = window.innerHeight;
+
+                    canvas.width = Math.floor(w * dpr);
+                    canvas.height = Math.floor(h * dpr);
+                    canvas.style.width = w + "px";
+                    canvas.style.height = h + "px";
+
+                    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                }
+
+                window.addEventListener("resize", resize, { passive: true });
+
+                window.addEventListener(
+                    "mousemove",
+                    (e) => {
+                        mouseX = e.clientX;
+                        mouseY = e.clientY;
+                    },
+                    { passive: true }
+                );
+
+                // Also handle touch
+                window.addEventListener(
+                    "touchmove",
+                    (e) => {
+                        const t = e.touches[0];
+                        if (t) {
+                            mouseX = t.clientX;
+                            mouseY = t.clientY;
+                        }
+                    },
+                    { passive: true }
+                );
+
+                function draw() {
+                    ctx.clearRect(0, 0, w, h);
+
+                    // optional: subtle background like your radial-gradient
+                    // ctx.fillStyle = 'transparent';
+                    // ctx.fillRect(0, 0, w, h);
+
+                    for (let y = 0; y <= h; y += spacing) {
+                        for (let x = 0; x <= w; x += spacing) {
+                            const dx = x - mouseX;
+                            const dy = y - mouseY;
+                            const dist = Math.hypot(dx, dy);
+
+                            // 0..1 where 1 is near the mouse
+                            const t = Math.max(0, 1 - dist / influence);
+
+                            // radius from baseR to maxR
+                            const r = baseR + t * (maxR - baseR);
+
+                            ctx.beginPath();
+                            ctx.arc(x, y, r, 0, Math.PI * 2);
+
+                            // match your dot color
+                            ctx.fillStyle = "#d9d9d9";
+                            ctx.fill();
+                        }
+                    }
+
+                    requestAnimationFrame(draw);
+                }
+
+                resize();
+                draw();
+            })();
+        </script>
     </body>
 </html>
