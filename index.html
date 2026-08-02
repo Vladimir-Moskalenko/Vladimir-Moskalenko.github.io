@@ -3,109 +3,34 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dashboard</title>
+        <title>Vladimir's Website</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <canvas id="bgDots" aria-hidden="true" background="black"></canvas>
-        <header class="welcome">
+        <script src="main.js"></script>
+        <header class="top">
             <h1>Vladimir's Website</h1>
         </header>
 
-        <main class="grid">
-            <section class="card">
+        <main class="grd">
+            <section class="sec">
                 <h2><a href="pictures.html" target="_blank">Pictures</a></h2>
+            <div class="scroll-container">
+                <img src="Files/Images/zion/Zion1.JPG" alt=""/>
+                <img src="Files/Images/zion/Zion2.JPG" alt=""/>
+                <img src="Files/Images/zion/Zion5.JPG" alt=""/>
+                <img src="Files/Images/zion/Zion7.JPG" alt=""/>
+                <img src="Files/Images/zion/Zion8.JPG" alt=""/>
+                <img src="Files/Images/zion/Zion9.JPG" alt=""/>
+                <img src="Files/Images/zion/Zion10.JPG" alt=""/>
+                <img src="Files/Images/zion/Zion11.JPG" alt=""/>
+                <img src="Files/Images/zion/Zion12.JPG" alt=""/>
+            </div>
             </section>
-            <section class="card">
+            <section class="sec">
                 <h2><a href="wallpapers.html" target="_blank">Wallpapers</a></h2>
             </section>
         </main>
-
-        <script>
-            (() => {
-                const canvas = document.getElementById("bgDots");
-                const ctx = canvas.getContext("2d", { alpha: true });
-
-                let w, h, dpr;
-                const spacing = 24;
-                const baseR = 1;
-                const maxR = 2;
-                const influence = 100;
-
-                let mouseX = -9999,
-                    mouseY = -9999;
-
-                function resize() {
-                    dpr = Math.max(1, window.devicePixelRatio || 1);
-                    w = window.innerWidth;
-                    h = window.innerHeight;
-
-                    canvas.width = Math.floor(w * dpr);
-                    canvas.height = Math.floor(h * dpr);
-                    canvas.style.width = w + "px";
-                    canvas.style.height = h + "px";
-
-                    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-                }
-
-                window.addEventListener("resize", resize, { passive: true });
-
-                window.addEventListener(
-                    "mousemove",
-                    (e) => {
-                        mouseX = e.clientX;
-                        mouseY = e.clientY;
-                    },
-                    { passive: true }
-                );
-
-                // Also handle touch
-                window.addEventListener(
-                    "touchmove",
-                    (e) => {
-                        const t = e.touches[0];
-                        if (t) {
-                            mouseX = t.clientX;
-                            mouseY = t.clientY;
-                        }
-                    },
-                    { passive: true }
-                );
-
-                function draw() {
-                    ctx.clearRect(0, 0, w, h);
-
-                    // optional: subtle background like your radial-gradient
-                    // ctx.fillStyle = 'transparent';
-                    // ctx.fillRect(0, 0, w, h);
-
-                    for (let y = 0; y <= h; y += spacing) {
-                        for (let x = 0; x <= w; x += spacing) {
-                            const dx = x - mouseX;
-                            const dy = y - mouseY;
-                            const dist = Math.hypot(dx, dy);
-
-                            // 0..1 where 1 is near the mouse
-                            const t = Math.max(0, 1 - dist / influence);
-
-                            // radius from baseR to maxR
-                            const r = baseR + t * (maxR - baseR);
-
-                            ctx.beginPath();
-                            ctx.arc(x, y, r, 0, Math.PI * 2);
-
-                            // match your dot color
-                            ctx.fillStyle = "#d9d9d9";
-                            ctx.fill();
-                        }
-                    }
-
-                    requestAnimationFrame(draw);
-                }
-
-                resize();
-                draw();
-            })();
-        </script>
     </body>
 </html>
