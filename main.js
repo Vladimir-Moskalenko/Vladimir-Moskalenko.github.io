@@ -1,3 +1,7 @@
+function isDesktop() {
+    return !/Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
 (() => {
     const canvas = document.getElementById("bgDots");
     const ctx = canvas.getContext("2d", { alpha: true });
@@ -30,14 +34,16 @@
 
     window.addEventListener("getDims", getDims, { passive: true });
 
-    window.addEventListener(
-        "mousemove",
-        (event) => {
-            mX = event.clientX;
-            mY = event.clientY;
-        },
-        { passive: true }
-    );
+    if (isDesktop()) {
+        window.addEventListener(
+            "mousemove",
+            (event) => {
+                mX = event.clientX;
+                mY = event.clientY;
+            },
+            { passive: true }
+        );
+    }
 
     window.addEventListener("click", (event) => {
         ws.push({
