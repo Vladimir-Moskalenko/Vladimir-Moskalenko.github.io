@@ -99,13 +99,28 @@ function isDesktop() {
     draw();
 })();
 
-function openVS() {
+function openVS1() {
     voteSites = [
         "https://topminecraftservers.org/vote/44054",
         "https://minecraft.buzz/vote/basicallymc",
         "https://minecraftservers.org/vote/690491",
         "https://minecraft-mp.com/server/361164/vote/",
         "https://minecraftbestservers.com/server-basicallymc.7102/vote"
+    ];
+
+    for (let i = 0; i < 5; i++) {
+        window.open(voteSites[i]);
+    }
+}
+
+
+function openVS() {
+    voteSites = [
+        "https://minecraft-mp.com/server/265624/vote/",
+        "https://topminecraftservers.org/vote/19220",
+        "https://www.minerank.com/semisurvivalcraft/vote",
+        "https://best-minecraft-servers.co/server-semisurvivalcraft.326/vote",
+        "https://minecraftservers.org/vote/681921"
     ];
 
     for (let i = 0; i < 5; i++) {
